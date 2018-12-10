@@ -14,3 +14,32 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+
+.toolbar-background{
+  background: #5757af;
+}
+
+.toolbar-title{
+  color: #fff;
+}
+
+.bar-buttons{
+  color: #fff;
+}
+
+.scroll-content, .list, .item, .back-button{
+  color: #fff;
+  background: #5757af;
+}
+
+.profile-img{
+  max-width: 40px;
+  max-height: 40px;
+  border-radius: 50%;
+  border: 1px solid #f6f6f6;
+  overflow: hidden;
+  float: right;
+  margin-right: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}

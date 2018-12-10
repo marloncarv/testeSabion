@@ -1,0 +1,72 @@
+cartao-form {
+  .text-input{
+    width: 100%;
+    padding: 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: none;
+    color: rgba(255, 255, 255, 1.0);
+    background: rgba(255, 255, 255, 0.2);
+  }
+
+  .text-input::placeholder{
+    color: #f6f6f6;
+  }
+
+  .row{
+    margin-bottom: -10px;
+  }
+
+  .checkbox .checkbox-icon{
+    border-radius: 20%;
+    position: relative;
+    width: 21px;
+    height: 21px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #c8c7cc;
+    background-color: transparent;
+  }
+
+  .item.item-ios .checkbox-ios{
+    margin: 8px 16px 8px -16px;
+  }
+
+  .no-bg{
+    background: transparent;
+  }
+
+  .profile-img-lg{
+    border: 1px solid #fff;
+    border-radius: 50%;
+    overflow: hidden;
+    max-width: 100%;
+    max-height: 100%;
+    background: #fff;
+  }
+
+  @media (max-width: 320px){
+    ion-label{
+      font-size: 11px;
+    }
+  }
+
+  .item-ios.item-block .item-inner{
+    border: none;
+  }
+
+  .button-outline-ios{
+    border-width: 2px;
+    text-transform: uppercase;
+  }
+
+  .bottom-line{
+    border-bottom: 1px solid;
+    border-color: rgba(255, 255, 255, 0.2);
+    margin-bottom: 5px;
+  }
+
+  .formError{
+    background: rgba(255, 0, 0, 0.2)
+  }
+}
