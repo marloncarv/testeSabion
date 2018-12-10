@@ -9,3 +9,7 @@ Instruções:
 
 3 - Rodar o comando ionic serve
 
+4 - Habilitar a visualização de mobile device no navegador.
+
+5 - Atualizar a página para que o CSS carregue de maneira adequada para o mobile device escolhido.
+
