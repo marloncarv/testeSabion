@@ -1,6 +1,6 @@
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { IonicPageModule} from "ionic-angular";
-import { CartaoFormComponent } from './components/cartao-form/cartao-form';
+import { CartaoFormComponent } from './cartao-form/cartao-form';
 
 @NgModule({
 	declarations: [CartaoFormComponent],

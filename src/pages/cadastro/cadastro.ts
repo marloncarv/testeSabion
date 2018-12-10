@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { CartaoFormComponent } from "../../components/cartao-form/cartao-form";
 
 /**
  * Generated class for the CadastroPage page.
@@ -12,10 +11,7 @@ import { CartaoFormComponent } from "../../components/cartao-form/cartao-form";
 @IonicPage()
 @Component({
   selector: 'page-cadastro',
-  templateUrl: 'cadastro.html',
-  imports: [
-    CartaoFormComponent
-  ]
+  templateUrl: 'cadastro.html'
 })
 export class CadastroPage {
 
