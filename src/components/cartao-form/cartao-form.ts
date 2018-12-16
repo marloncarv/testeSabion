@@ -31,8 +31,12 @@ export class CartaoFormComponent {
   constructor(public formbuilder: FormBuilder,
               private alertCtrl: AlertController) {
 
+    this.setValidationConfig();
 
-    this.formgroup = formbuilder.group({
+  }
+
+  setValidationConfig(){
+    this.formgroup = this.formbuilder.group({
       nome: ['', Validators.required],
       sobrenome: ['', Validators.required],
       endereco: ['', Validators.required],
@@ -72,7 +76,6 @@ export class CartaoFormComponent {
     this.telComercial = this.formgroup.controls['telComercial'];
     this.telCelular = this.formgroup.controls['telCelular'];
     this.email = this.formgroup.controls['email'];
-
   }
 
   presentAlert(title, subtitle) {

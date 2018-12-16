@@ -9,9 +9,12 @@ import { HelloIonicPage } from '../pages/hello-ionic/hello-ionic';
 import { CadastroPage } from '../pages/cadastro/cadastro';
 
 import { CartaoFormComponent } from "../components/cartao-form/cartao-form";
+import { ProfilePicComponent } from "../components/profile-pic/profile-pic";
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { Camera } from '@ionic-native/camera';
+import { NativeStorage } from '@ionic-native/native-storage';
 
 
 @NgModule({
@@ -19,14 +22,13 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     MyApp,
     HelloIonicPage,
     CadastroPage,
-    CartaoFormComponent
+    CartaoFormComponent,
+    ProfilePicComponent
   ],
   imports: [
     BrowserModule,
     BrMaskerModule,
-    IonicModule.forRoot(MyApp, {
-      backButtonText: 'Voltar'
-    })
+    IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -37,7 +39,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    Camera,
+    NativeStorage
   ]
 })
 export class AppModule {}
