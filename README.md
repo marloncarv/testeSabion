@@ -1,5 +1,5 @@
-# testeSabion
-App em Ionic 3 como teste para a Sabion
+# teste Ionic
+App em Ionic 3 como teste
 
 Instruções:
 
